@@ -1,0 +1,104 @@
+# ===================================================================
+# =         通用 Python 和 PyCharm 项目的 .gitignore 文件         =
+# ===================================================================
+# 这个文件由 JetBrains 官方模板和社区最佳实践整理而成。
+# 作用：告诉 Git 哪些文件或目录不需要被版本控制。
+
+### JetBrains / PyCharm ###
+# PyCharm/IntelliJ 的项目配置文件目录。
+# 包含个人工作区设置、运行配置、本地历史记录等，不应提交到版本库。
+.idea/
+
+# 注意：如果你想和团队共享特定的运行配置或代码风格，可以取消下面行的注释。
+# 这是一个高级用法，确保你只共享对整个团队都有用的配置。
+# !.idea/runConfigurations/
+# !.idea/codeStyles/
+
+# IntelliJ/PyCharm 模块文件，通常包含在 .idea/ 目录中，但以防万一。
+*.iml
+
+
+### Python 运行时和虚拟环境 ###
+# Python 编译后的字节码文件
+*.pyc
+*.pyo
+
+# Python 3 的字节码缓存目录
+__pycache__/
+
+# 虚拟环境目录 (常见的命名)
+# 依赖项应该通过 requirements.txt 或 pyproject.toml (poetry/pdm) 文件管理。
+venv/
+.venv/
+env/
+.env/
+virtualenv/
+ENV/
+venv.bak/
+.virtualenv/
+
+# Pip 缓存和元数据
+pip-wheel-metadata/
+.eggs/
+*.egg-info/
+
+
+### 构建和分发 ###
+# setuptools, wheel, pyinstaller 等工具的构建产物
+build/
+dist/
+*.egg
+*.spec
+
+
+### 测试和代码覆盖率 ###
+# Pytest, Coverage.py 等工具的缓存和报告
+.pytest_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+
+
+### 操作系统和编辑器生成的文件 ###
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Linux/Vim/Emacs 临时文件
+*~
+*.swp
+*.swo
+
+
+### 本地配置和敏感信息 ###
+# 环境变量文件 (绝对不要提交 API 密钥、密码等敏感信息！)
+.env
+.env.*
+# 保留 .env.example 文件，作为环境变量的模板
+!.env.example
+
+# 日志文件
+*.log
+logs/
+*.log.*
+
+# 本地数据库文件
+*.db
+*.sqlite3
+db.sqlite3 # Django 默认开发数据库
+*.sql
+
+# Sass/Less 缓存
+.sass-cache/
+
+# Jupyter Notebook 检查点
+.ipynb_checkpoints
